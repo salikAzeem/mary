@@ -3,16 +3,22 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Download, ExternalLink, Award } from 'lucide-react';
 
-import rProgrammingImg from "../../assets/images/cert-r-programming.jpg";
-import tableauImg from "../../assets/images/cert-tableau.jpg";
-import dsaGFGImg from "../../assets/images/cert-dsa-gfg.jpg";
-import chatgptADAImg from "../../assets/images/cert-chatgpt-ada.jpg";
+import Hacka from "../../assets/images/Hacka.png";
+import Cpp from "../../assets/images/Cpp.png";
+import Dsa from "../../assets/images/Dsa.png";
+import Cc from "../../assets/images/Cc.png";
+import Mooc from "../../assets/images/Mooc.png";
+import Reactimg from "../../assets/images/Reactimg.png";
 
 
-import rProgrammingPDF from "../../assets/docs/r-programming-certificate.pdf";
-import tableauPDF from "../../assets/docs/Tab.pdf";
-import dsaGFGPDF from "../../assets/docs/Mary DSA geeksforgeeks.pdf";
-import chatgptADAPDF from "../../assets/docs/ADA.pdf"; // if exists
+
+import cpp from "../../assets/docs/cpp.pdf";
+import cc from "../../assets/docs/cc.pdf";
+import dsaGFGPDF from "../../assets/docs/salik DSA.pdf";
+import react from "../../assets/docs/React.pdf";
+import hackathon from "../../assets/docs/Hackathon salik.pdf";
+import mooc from "../../assets/docs/mooc.pdf";
+
 
 
 interface Certification {
@@ -29,45 +35,66 @@ interface Certification {
 const certificationsData: Certification[] = [
   {
     id: 1,
-    title: "R Programming",
-    issuer: "Johns Hopkins University (Coursera)",
-    date: "May 2024",
-    image: rProgrammingImg,
-    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/5RQJVCFS4SF6",
-    pdfUrl: rProgrammingPDF,
-    skills: ["R Programming", "Data Analysis", "Statistical Computing"]
-  },
-  {
-    id: 2,
-    title: "Data Analysis with Tableau",
-    issuer: "Coursera",
-    date: "November 2024",
-    image: tableauImg,
-    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/J8241YFDM0OU",
-    pdfUrl: tableauPDF,
-    skills: ["Data Visualization", "Tableau", "Data Analytics"]
-  },
-  {
-    id: 3,
     title: "DSA Self Paced Course",
     issuer: "GeeksforGeeks",
-    date: "July 2024",
-    image: dsaGFGImg,
+    date: "July, 2024",
+    image: Dsa,
     credentialUrl: "https://media.geeksforgeeks.org/courses/certificates/b75f9ee7e8d9bf06717f83e4d42826b4.pdf",
     pdfUrl: dsaGFGPDF,
     skills: ["Data Structures", "Algorithms", "Problem Solving"]
   },
   {
+    id: 2,
+    title: "React Bootcamp",
+    issuer: "UpGrad",
+    date: "Feb, 2025",
+    image: Reactimg, // e.g. reactBootcampImg
+    credentialUrl: "not there",
+    pdfUrl: react,
+    skills: ["React", "JSX", "State Management"]
+  },
+  {
+    id: 3,
+    title: "Cloud Computing",
+    issuer: "NPTEL",
+    date: "Jul-Oct, 2024",
+    image: Cc,
+    credentialUrl:"NOt there",
+    pdfUrl: cc,
+    skills: ["AWS", "Virtualization", "Cloud Services"]
+  },
+  {
     id: 4,
-    title: "ChatGPT Advanced Data Analysis",
+    title: "CTF Hackathon",
+    issuer: "UpGrad Campus",
+    date: "April, 2024",
+    image: Hacka,
+    credentialUrl: "not there",
+    pdfUrl: hackathon,
+    skills: ["Ethical Hacking", "Cybersecurity", "Teamwork"]
+  },
+  {
+    id: 5,
+    title: "SQL for Data Science",
+    issuer: "Great Learning",
+    date: "Feb, 2023",
+    image: Mooc,
+    credentialUrl: "REPLACE_WITH_CREDENTIAL_LINK",
+    pdfUrl: mooc,
+    skills: ["SQL", "Data Queries", "Data Manipulation"]
+  },
+  {
+    id: 6,
+    title: "Programming in C++",
     issuer: "Coursera",
-    date: "April 2024",
-    image: chatgptADAImg,
-    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/BA7GY5EAA87F",
-    pdfUrl: chatgptADAPDF,
-    skills: ["Data Analysis", "AI Tools", "ChatGPT Advanced Features"]
+    date: "Mar, 2024",
+    image: Cpp,
+    credentialUrl: "not there",
+    pdfUrl: cpp,
+    skills: ["C++", "Object-Oriented Programming", "Memory Management"]
   }
 ];
+
 
 const Certifications: React.FC = () => {
   const [ref, inView] = useInView({

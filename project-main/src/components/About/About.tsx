@@ -30,7 +30,7 @@ const About: React.FC = () => {
     },
   };
 
-  const skills = ['C++', 'Excel', 'Tableau', 'Java', 'HTML5', 'CSS3'];
+  const skills = ['HTML', 'CSS', 'JAVASCRIPT', 'React', 'Node', 'MongoDb'];
 
   return (
     <section id="about" className="section-padding bg-slate-100 dark:bg-slate-800/40">
@@ -80,22 +80,29 @@ const About: React.FC = () => {
               Who I Am
             </motion.h3>
             <motion.p variants={itemVariants} className="text-slate-700 dark:text-slate-300 mb-4">
-              I'm a passionate data scientist with a strong background in analyzing complex data, building predictive models, and delivering actionable insights. With 5+ years of experience, I specialize in creating data-driven solutions that combine statistical rigor with real-world impact.
-            </motion.p>
+            I'm a full-stack Web-developer. Building bridges between Front-end and Back-end, Transforming ideas into Web Reality. I’ve always been a great problem solver, an independent introvert, and a technophile obsessed with the latest devices            </motion.p>
             <motion.p variants={itemVariants} className="text-slate-700 dark:text-slate-300 mb-6">
-              I'm continuously learning and adapting to new tools and methodologies in the ever-evolving field of data science. My goal is to transform raw data into meaningful insights that drive intelligent decision-making and create tangible value.
-            </motion.p>
+            Now, I’m pursuing Bachelors of Technology in Computer Science and Engineering from Lovely Professional University. I’m familiar with a variety of programming languages, including HTML, CSS, Javascript, but I’m always adding new skills to my reserve. I enjoy meeting people and working with them in a team environment.            </motion.p>
 
             {/* Services */}
-            <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-              <div className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-soft text-center">
-                <Code className="text-indigo-600 dark:text-indigo-400 mb-2 mx-auto" size={24} />
-                <h4 className="font-semibold mb-1">Data Scientist</h4>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Custom data-driven applications and dashboards
-                </p>
-              </div>
-            </motion.div>
+            <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+  {/* Full-stack Web-developer #1 */}
+  <div className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-soft text-center">
+    <Code className="text-indigo-600 dark:text-indigo-400 mb-2 mx-auto" size={24} />
+    <h4 className="font-semibold mb-1">Frontend Developer</h4>
+    <p className="text-sm text-slate-600 dark:text-slate-400">
+    I'm a frontend developer with experience HTML,CSS,React and Javascript in building responsive and optimized sites .    </p>
+  </div>
+
+  {/* Full-stack Web-developer #2 */}
+  <div className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-soft text-center">
+    <Code className="text-indigo-600 dark:text-indigo-400 mb-2 mx-auto" size={24} />
+    <h4 className="font-semibold mb-1">Backend Developer</h4>
+    <p className="text-sm text-slate-600 dark:text-slate-400">
+    I have experience in Nodejs,Mongodb and json in developing fast and optimised back-end systems and APIs    </p>
+  </div>
+</motion.div>
+
 
             {/* Skills */}
             <motion.div variants={itemVariants}>

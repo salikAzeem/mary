@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.5 }}
             >
-              Vemala Mary Sangeetha
+              SALIK AZEEM
             </motion.h1>
             <motion.p 
               className="text-2xl md:text-3xl font-bold text-slate-700 dark:text-slate-300 mb-6"
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.4, duration: 0.5 }}
             >
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-400 dark:to-purple-400">
-                Data Scientist
+                Full-Stack Web-Developer
               </span>
             </motion.p>
             <motion.p 
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              I build intelligent and accessible data-driven solutions that empower better decisions
+              Building bridges between Front-end and Back-end.
             </motion.p>
             
             {/* CTA Buttons */}
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.7, duration: 0.5 }}
             >
               <a 
-                href="https://github.com/VMarySangeetha" 
+                href="https://github.com/salikAzeem" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 text-slate-700 hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400 transition-colors duration-300"
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/marysangeetha-v5/" 
+                href="https://www.linkedin.com/in/salik-azeem/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 text-slate-700 hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400 transition-colors duration-300"
@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:marysangeethavemala@gmail.com" 
+                href="mailto:salikazeem123@gmail.com" 
                 className="p-2 text-slate-700 hover:text-indigo-600 dark:text-slate-300 dark:hover:text-indigo-400 transition-colors duration-300"
                 aria-label="Email"
               >

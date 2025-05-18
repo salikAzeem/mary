@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent mb-2">
-              Vemala Mary Sangeetha
+              SALIK AZEEM
             </h2>
             <p className="text-slate-400 text-sm">
               Creating exceptional digital experiences
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <a 
-                href="https://github.com/VMarySangeetha" 
+                href="https://github.com/salikAzeem" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-indigo-400 transition-colors duration-300"
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/marysangeetha-v5/" 
+                href="https://www.linkedin.com/in/salik-azeem/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-indigo-400 transition-colors duration-300"
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:marysangeethavemala@gmail.com" 
+                href="mailto:salikazeem123@gmail.com" 
                 className="text-slate-400 hover:text-indigo-400 transition-colors duration-300"
                 aria-label="Email"
               >
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
             </div>
             
             <p className="text-slate-500 text-sm flex items-center">
-              © {currentYear} Made with <Heart size={14} className="mx-1 text-red-500" /> by Vemala Mary Sangeetha
+              © {currentYear} Made with <Heart size={14} className="mx-1 text-red-500" /> by Salik Azeem
             </p>
           </div>
         </div>

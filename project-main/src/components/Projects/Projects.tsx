@@ -4,14 +4,16 @@ import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 
 // Correctly import images manually
-import projectFoodify from '../../assets/images/project-foodify.jpg';
-import projectTableau from '../../assets/images/project-tableau.jpg';
+import projectFoodify from '../../assets/images/shobaimg.png';
+import projectTableau from '../../assets/images/shoes.png';
+import heartDiseaseDetection from '../../assets/images/heart.png';
 
 // Define assets manually since assets.projects caused confusion
 const assets = {
   projects: {
     foodify: projectFoodify,
     tableau: projectTableau,
+    heartdetec: heartDiseaseDetection
   }
 };
 
@@ -29,25 +31,36 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    title: "Tableau Dashboards",
-    description: "A collection of interactive Tableau dashboards designed to visualize and analyze complex data, enhance data comprehension, and support informed decision-making.",
-    image: assets.projects.tableau,
-    demoUrl: "https://github.com/VMarySangeetha/Tableau-Dashboards", // update later if you deploy
-    sourceUrl: "https://github.com/VMarySangeetha/Tableau-Dashboards",
-    tags: ["Tableau", "Data Visualization", "Dashboard Design"],
-    category: "Data Science",
+    title: "Shoba-Cakes",
+    description: "Designed and developed a fully functional bakery website for Shoba Cakes, enabling customers to order online and improving user navigation speed by 30%.",
+    image: assets.projects.foodify, 
+    demoUrl: "https://shobacakes.netlify.app/",
+    sourceUrl: "https://github.com/salikAzeem/Shoba-Cakes", 
+    tags: ["React", "HTML", "CSS", "JavaScript"],
+    category: "Web Development",
   },
   {
     id: 2,
-    title: "Foodify - Restaurant Website",
-    description: "A static website showcasing a restaurant's menu, services, and contact details, focused on delivering an engaging and responsive user experience.",
-    image: assets.projects.foodify,
-    demoUrl: "https://github.com/VMarySangeetha/Foodify", // update later if you deploy
-    sourceUrl: "https://github.com/VMarySangeetha/Foodify",
-    tags: ["HTML", "CSS", "Responsive Design"],
+    title: "Shoes-Carnival",
+    description: "For each one of those shoe sweethearts out there, ‘ShoesStore’ offers the one-stop goal to pick the correct match of footwear all within a few clicks.",
+    image: assets.projects.tableau, 
+    demoUrl: "https://shoescarnival.netlify.app/",
+    sourceUrl: "https://github.com/salikAzeem/Shoes-Carnival", 
+    tags: ["HTML", "CSS", "JavaScript"],
     category: "Web Development",
+  },
+  {
+    id: 3,
+    title: "Heart Disease Detection",
+    description: "Designed a heart disease diagnosis model using federated learning, achieving 85%–90% accuracy with data visualization to represent results graphically.",
+    image: assets.projects.heartdetec, 
+    demoUrl: "https://heartdetection.netlify.app/", 
+    sourceUrl: "https://github.com/salikAzeem/Heart-Disease-Detection", 
+    tags: ["Python", "Machine Learning", "Keras"],
+    category: "Machine Learning",
   }
 ];
+
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<string>('All');

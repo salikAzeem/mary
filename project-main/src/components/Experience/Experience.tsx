@@ -16,17 +16,18 @@ interface ExperienceItem {
 const experienceData: ExperienceItem[] = [
   {
     id: 1,
-    title: "Medical and Health Care in Tribal and Rural Areas Project",
-    company: "Faith Evangelical Ministries",
+    title: "Summer Internship, Indian Social Organisation",
+    company: "Indian Social Organisation",
     location: "Remote / On-field",
     period: "10 June 2023 - 10 July 2023",
     description: [
-      "Contributed to healthcare initiatives in tribal and rural areas through a non-governmental organization (NGO).",
-      "Participated in efforts to provide essential medical and health care services to underprivileged communities.",
-      "Worked collaboratively with teams across different regions, promoting unity and readiness to serve where needed.",
-      "Supported nonprofit initiatives focused on community welfare and health improvement."
+      "Worked with the Indian Social Organisation on initiatives aligned with the Sustainable Development Goals (SDGs), focusing on health, education, and environmental awareness in tribal and rural areas.",
+      "Participated in fieldwork aimed at improving community well-being through sustainable practices and resource awareness.",
+      "Collaborated with local teams to conduct workshops, surveys, and outreach programs that promoted long-term development strategies.",
+      "Contributed to planning and executing social impact initiatives that support rural sustainability and inclusive growth."
     ],
-    skills: ["Community Service", "Healthcare Assistance", "Team Collaboration", "Nonprofit Work"]
+    skills: ["Sustainable Development", "Community Outreach", "Team Collaboration", "Rural Engagement", "Social Impact"]
+    
   },
   {
     id: 2,
